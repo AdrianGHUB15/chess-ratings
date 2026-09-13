@@ -1,0 +1,9 @@
+{
+  "event": "Chess",
+  "timecontrol": "2+1, or 120+1",
+  "hardware": "",
+  "hash": "512mb per engine",
+  "threads": "1 thread per engine",
+  "openings": "",
+  "adjudication": "6 man syzygy adjudication, with resign and draw adjucication"
+}

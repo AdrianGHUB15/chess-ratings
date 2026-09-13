@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Engine Rating List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Tournament Info</h2>
+            <div id="tinfo"></div>
+        </div>
+
+        <div class="main">
+            <h2>Rating List</h2>
+            <table id="ratingTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Player</th>
+                        <th>Elo</th>
+                        <th>Error</th>
+                        <th>Points</th>
+                        <th>Played</th>
+                        <th>(%)</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>D%</th>
+                        <th>OppAvg</th>
+                        <th>CFS%</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        async function loadData() {
+        const ratings = await fetch("ratings.json").then(r => r.json());
+        const tinfo = await fetch("tournament.json").then(r => r.json());
+
+        // Tournament info
+        const tdiv = document.getElementById("tinfo");
+        tdiv.innerHTML = `
+        <p><b>Event:</b> ${tinfo.event}</p>
+        <p><b>Time Control:</b> ${tinfo.timecontrol}</p>
+        <p><b>Hardware:</b> ${tinfo.hardware}</p>
+        <p><b>Hash:</b> ${tinfo.hash}</p>
+        <p><b>Threads:</b> ${tinfo.threads}</p>
+        <p><b>Openings:</b> ${tinfo.openings}</p>
+        <p><b>Adjudication:</b> ${tinfo.adjudication}</p>
+        <p><b>Ratings:</b> Ordo</p>
+        `;
+
+        // Rating table
+        const tbody = document.querySelector("#ratingTable tbody");
+        ratings.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+        <td>${row.rank}</td>
+        <td>${row.name}</td>
+        <td>${row.elo}</td>
+        <td>${row.error}</td>
+        <td>${row.points}</td>
+        <td>${row.played}</td>
+        <td>${row.score}</td>
+        <td>${row.wins}</td>
+        <td>${row.draws}</td>
+        <td>${row.losses}</td>
+        <td>${row.draw_percent}</td>
+        <td>${row.opp_avg}</td>
+        <td>${row.cfs}</td>
+        `;
+        tbody.appendChild(tr);
+        });
+        }
+
+        loadData();
+    </script>
+
+</body>
+</html>
