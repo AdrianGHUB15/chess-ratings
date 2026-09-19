@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
     <title>Chess Engine Rating List</title>
@@ -8,43 +7,66 @@
 <body>
 
     <div class="container">
+
         <div class="sidebar">
             <h2>Tournament Info</h2>
             <div id="tinfo"></div>
         </div>
 
         <div class="main">
+
             <h2>Rating List</h2>
+
+            <p>
+                <b>Current List:</b>
+                <span id="currentCategory">Combined Ratings</span>
+            </p>
+
+            <select id="ratingCategory">
+                <option value="fishtest_stc">Fishtest STC (10+0.1)</option>
+                <option value="fishtest_ltc">Fishtest LTC (60+0.6)</option>
+                <option value="ccc_bullet">CCC Bullet (60+1)</option>
+                <option value="ccrl_blitz">CCRL Blitz (120+1)</option>
+                <option value="combined" selected>Combined Ratings</option>
+            </select>
+
             <table id="ratingTable">
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Player</th>
-                        <th>Elo</th>
+                        <th>Rank</th>
+                        <th>Engine Name</th>
+                        <th>Rating</th>
                         <th>Error</th>
                         <th>Points</th>
-                        <th>Played</th>
-                        <th>(%)</th>
+                        <th>Games</th>
+                        <th>%</th>
                         <th>W</th>
                         <th>D</th>
                         <th>L</th>
-                        <th>D%</th>
-                        <th>OppAvg</th>
-                        <th>CFS%</th>
+                        <th>Draw %</th>
+                        <th>Ptnml (0-2)</th>
                     </tr>
                 </thead>
+
                 <tbody></tbody>
+
             </table>
+
         </div>
+
     </div>
 
     <script>
-        async function loadData() {
-        const ratings = await fetch("ratings.json").then(r => r.json());
-        const tinfo = await fetch("tournament.json").then(r => r.json());
 
-        // Tournament info
+        let allRatings;
+
+        async function loadData() {
+
+        const tinfo = await fetch("tournament.json").then(r => r.json());
+        allRatings = await fetch("ratings.json").then(r => r.json());
+
         const tdiv = document.getElementById("tinfo");
+
         tdiv.innerHTML = `
         <p><b>Event:</b> ${tinfo.event}</p>
         <p><b>Time Control:</b> ${tinfo.timecontrol}</p>
@@ -53,13 +75,26 @@
         <p><b>Threads:</b> ${tinfo.threads}</p>
         <p><b>Openings:</b> ${tinfo.openings}</p>
         <p><b>Adjudication:</b> ${tinfo.adjudication}</p>
-        <p><b>Ratings:</b> Ordo</p>
+        <p><b>Ratings:</b> ${tinfo.ratings}</p>
+        <p><b>Anchor:</b> ${tinfo.anchor}</p>
+        <p><b>Lists:</b> ${tinfo.lists}</p>
         `;
 
-        // Rating table
+        loadCategory("combined");
+        }
+
+        function loadCategory(category) {
+
         const tbody = document.querySelector("#ratingTable tbody");
+
+        tbody.innerHTML = "";
+
+        const ratings = allRatings[category];
+
         ratings.forEach(row => {
+
         const tr = document.createElement("tr");
+
         tr.innerHTML = `
         <td>${row.rank}</td>
         <td>${row.name}</td>
@@ -72,14 +107,28 @@
         <td>${row.draws}</td>
         <td>${row.losses}</td>
         <td>${row.draw_percent}</td>
-        <td>${row.opp_avg}</td>
-        <td>${row.cfs}</td>
+        <td>${row.ptnml}</td>
         `;
+
         tbody.appendChild(tr);
+
         });
+
         }
 
+        document.getElementById("ratingCategory").addEventListener("change", function() {
+
+        const category = this.value;
+
+        document.getElementById("currentCategory").textContent =
+        this.options[this.selectedIndex].text;
+
+        loadCategory(category);
+
+        });
+
         loadData();
+
     </script>
 
 </body>

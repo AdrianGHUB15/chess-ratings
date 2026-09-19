@@ -1,9 +1,13 @@
 {
-  "event": "Chess",
-  "timecontrol": "2+1, or 120+1",
-  "hardware": "",
-  "hash": "512mb per engine",
+  "event": "Chess Engine Rating List",
+  "timecontrol": "Fishtest STC (10+0.1), Fishtest LTC (60+0.6), CCC Bullet (60+1), CCRL Blitz (120+1)",
+  "hardware": "Intel i5-12500T, 4 concurrency",
+  "hash": "STC: 32 MB, LTC: 128 MB, CCC Bullet: 256 MB, CCRL Blitz: 512 MB",
   "threads": "1 thread per engine",
-  "openings": "",
-  "adjudication": "6 man syzygy adjudication, with resign and draw adjucication"
+  "openings": "UHO_4060_v4, random order, 20 plies",
+  "adjudication": "Syzygy 6-man, resign and draw adjudication",
+  "ratings": "CCRL anchored",
+  "anchor": "Stash37 = 3430, at a fixed 120+1 and 512 hash",
+  "lists": "Fishtest STC, Fishtest LTC, CCC Bullet, CCRL Blitz, Combined Ratings",
+  "Combined ratings":  "All ratings of all engines at all tc's squished into 1 list; some stats like error bars, penta and draw rate wont be applicable here"
 }
