@@ -9,5 +9,6 @@
   "ratings": "CCRL anchored",
   "anchor": "Stash37 = 3430, at a fixed 120+1 and 512 hash",
   "lists": "Fishtest STC, Fishtest LTC, CCC Bullet, CCRL Blitz, Combined Ratings",
-  "Combined ratings":  "All ratings of all engines at all tc's squished into 1 list; some stats like error bars, penta and draw rate wont be applicable here"
+  "Combined ratings": "All ratings of all engines at all tc's squished into 1 list; some stats like error bars, penta and draw rate wont be applicable here",
+  "Note" : "Some engines that are in X event arent in Y event because that engine's owner wanted me to test their engine a bit too late"
 }
