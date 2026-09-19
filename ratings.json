@@ -1,5 +1,20 @@
 {
-  "fishtest_stc": [],
+  "fishtest_stc": [
+    {
+      "rank": 1,
+      "name": "Stockfish19",
+      "elo": 3904,
+      "error": 7,
+      "points": 2153.5,
+      "played": 3200,
+      "score": 67.3,
+      "wins": 1191,
+      "draws": 1925,
+      "losses": 84,
+      "draw_percent": 60.2,
+      "ptnml": "[0,0,18,94,14]"
+    }
+  ],
   "fishtest_ltc": [],
   "ccc_bullet": [],
   "ccrl_blitz": [],
