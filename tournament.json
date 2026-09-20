@@ -1,14 +1,14 @@
 {
   "event": "Chess Engine Rating List",
-  "timecontrol": "Fishtest STC (10+0.1), Fishtest LTC (60+0.6), CCC Bullet (60+1), CCRL Blitz (120+1)",
+  "time_controls": "Fishtest STC (10+0.1), Fishtest LTC (60+0.6), CCC Bullet (60+1), CCRL Blitz (120+1)",
   "hardware": "Intel i5-12500T, 4 concurrency",
   "hash": "STC: 32 MB, LTC: 128 MB, CCC Bullet: 256 MB, CCRL Blitz: 512 MB",
-  "threads": "1 thread per engine",
-  "openings": "UHO_4060_v4, random order, 20 plies",
-  "adjudication": "Syzygy 6-man, resign and draw adjudication",
+  "threads": 1,
+  "openings": "UHO_4060_v4, random order",
+  "adjudication": "Syzygy 6-man, resign and draw",
   "ratings": "CCRL anchored",
-  "anchor": "Stash37 = 3430, at a fixed 120+1 and 512 hash",
-  "lists": "Fishtest STC, Fishtest LTC, CCC Bullet, CCRL Blitz, Combined Ratings",
-  "Combined ratings": "All ratings of all engines at all tc's squished into 1 list; some stats like error bars, penta and draw rate wont be applicable here",
-  "Note" : "Some engines may not be in some events because that engine's owner wanted me to test their engine a bit too late"
+  "anchor": "Stash37 = 3430 always at 120+1, 512 MB",
+  "lists": "STC, LTC, CCC Bullet, CCRL Blitz, Combined",
+  "combined": "All ratings across time controls in one list; most stats N/A",
+  "note": "Some engines may be missing if their owners submitted them too late."
 }
