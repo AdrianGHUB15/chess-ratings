@@ -68,17 +68,30 @@
         const tdiv = document.getElementById("tinfo");
 
         tdiv.innerHTML = `
-        <p><b>Event:</b> ${tinfo.event}</p>
-        <p><b>Time Control:</b> ${tinfo.timecontrol}</p>
-        <p><b>Hardware:</b> ${tinfo.hardware}</p>
-        <p><b>Hash:</b> ${tinfo.hash}</p>
-        <p><b>Threads:</b> ${tinfo.threads}</p>
-        <p><b>Openings:</b> ${tinfo.openings}</p>
-        <p><b>Adjudication:</b> ${tinfo.adjudication}</p>
-        <p><b>Ratings:</b> ${tinfo.ratings}</p>
-        <p><b>Anchor:</b> ${tinfo.anchor}</p>
-        <p><b>Lists:</b> ${tinfo.lists}</p>
-        `;
+<p><b>Event:</b> ${tinfo.event}</p>
+
+<p><b>Time Control:</b> ${tinfo.timecontrol}</p>
+
+<p><b>Hardware:</b> ${tinfo.hardware}</p>
+
+<p><b>Hash:</b> ${tinfo.hash}</p>
+
+<p><b>Threads:</b> ${tinfo.threads}</p>
+
+<p><b>Openings:</b> ${tinfo.openings}</p>
+
+<p><b>Adjudication:</b> ${tinfo.adjudication}</p>
+
+<p><b>Ratings:</b> ${tinfo.ratings}</p>
+
+<p><b>Anchor:</b> ${tinfo.anchor}</p>
+
+<p><b>Lists:</b> ${tinfo.lists}</p>
+
+<p><b>Combined Ratings:</b> ${tinfo["Combined ratings"]}</p>
+
+<p><b>Note:</b> ${tinfo.Note}</p>
+`;
 
         loadCategory("combined");
         }
