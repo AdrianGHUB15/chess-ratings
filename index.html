@@ -59,7 +59,9 @@
     <script>
 
         let allRatings;
-
+        function formatNumber(value) {
+    return Number(value).toFixed(1);
+}
         async function loadData() {
 
         const tinfo = await fetch("tournament.json").then(r => r.json());
@@ -67,30 +69,30 @@
 
         const tdiv = document.getElementById("tinfo");
 
-        tdiv.innerHTML = `
-<p><b>Event:</b> ${tinfo.event}</p>
+    tdiv.innerHTML = `
+    <p><b>Event:</b> ${tinfo.event}</p>
 
-<p><b>Time Control:</b> ${tinfo.timecontrol}</p>
+    <p><b>Time Controls:</b><br>${tinfo.timecontrol}</p>
 
-<p><b>Hardware:</b> ${tinfo.hardware}</p>
+    <p><b>Hardware:</b><br>${tinfo.hardware}</p>
 
-<p><b>Hash:</b> ${tinfo.hash}</p>
+    <p><b>Hash Settings:</b><br>${tinfo.hash}</p>
 
-<p><b>Threads:</b> ${tinfo.threads}</p>
+    <p><b>Threads:</b><br>${tinfo.threads}</p>
 
-<p><b>Openings:</b> ${tinfo.openings}</p>
+    <p><b>Openings:</b><br>${tinfo.openings}</p>
 
-<p><b>Adjudication:</b> ${tinfo.adjudication}</p>
+    <p><b>Adjudication:</b><br>${tinfo.adjudication}</p>
 
-<p><b>Ratings:</b> ${tinfo.ratings}</p>
+    <p><b>Ratings:</b><br>${tinfo.ratings}</p>
 
-<p><b>Anchor:</b> ${tinfo.anchor}</p>
+    <p><b>Anchor:</b><br>${tinfo.anchor}</p>
 
-<p><b>Lists:</b> ${tinfo.lists}</p>
+    <p><b>Lists:</b><br>${tinfo.lists}</p>
 
-<p><b>Combined Ratings:</b> ${tinfo["Combined ratings"]}</p>
+    <p><b>Combined Ratings:</b><br>${tinfo["Combined ratings"]}</p>
 
-<p><b>Note:</b> ${tinfo.Note}</p>
+    <p><b>Note:</b><br>${tinfo.Note}</p>
 `;
 
         loadCategory("combined");
@@ -109,19 +111,19 @@
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
-        <td>${row.rank}</td>
-        <td>${row.name}</td>
-        <td>${row.elo}</td>
-        <td>${row.error}</td>
-        <td>${row.points}</td>
-        <td>${row.played}</td>
-        <td>${row.score}</td>
-        <td>${row.wins}</td>
-        <td>${row.draws}</td>
-        <td>${row.losses}</td>
-        <td>${row.draw_percent}</td>
-        <td>${row.ptnml}</td>
-        `;
+    <td>${row.rank}</td>
+    <td>${row.name}</td>
+    <td>${formatNumber(row.elo)}</td>
+    <td>${formatNumber(row.error)}</td>
+    <td>${formatNumber(row.points)}</td>
+    <td>${row.played}</td>
+    <td>${formatNumber(row.score)}</td>
+    <td>${row.wins}</td>
+    <td>${row.draws}</td>
+    <td>${row.losses}</td>
+    <td>${formatNumber(row.draw_percent)}</td>
+    <td>${row.ptnml}</td>
+`;
 
         tbody.appendChild(tr);
 
