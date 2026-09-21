@@ -59,9 +59,20 @@
     <script>
 
         let allRatings;
-        function formatNumber(value) {
-    return Number(value).toFixed(1);
+   function formatNumber(value) {
+    if (value === null || value === undefined || value === "-" || value === "") {
+        return "-";
+    }
+
+    const number = Number(value);
+
+    if (Number.isNaN(number)) {
+        return "-";
+    }
+
+    return number.toFixed(1);
 }
+
         async function loadData() {
 
         const tinfo = await fetch("tournament.json").then(r => r.json());
@@ -69,10 +80,10 @@
 
         const tdiv = document.getElementById("tinfo");
 
-    tdiv.innerHTML = `
+tdiv.innerHTML = `
     <p><b>Event:</b> ${tinfo.event}</p>
 
-    <p><b>Time Controls:</b><br>${tinfo.timecontrol}</p>
+    <p><b>Time Controls:</b><br>${tinfo.time_controls}</p>
 
     <p><b>Hardware:</b><br>${tinfo.hardware}</p>
 
@@ -90,10 +101,11 @@
 
     <p><b>Lists:</b><br>${tinfo.lists}</p>
 
-    <p><b>Combined Ratings:</b><br>${tinfo["Combined ratings"]}</p>
+    <p><b>Combined Ratings:</b><br>${tinfo.combined}</p>
 
-    <p><b>Note:</b><br>${tinfo.Note}</p>
+    <p><b>Note:</b><br>${tinfo.note}</p>
 `;
+
 
         loadCategory("combined");
         }
