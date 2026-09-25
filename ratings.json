@@ -524,7 +524,6 @@
 
 
   "ccc_bullet": [
-      [
         {
           "rank": 1,
           "name": "Stockfish 19",
@@ -791,8 +790,6 @@
           "draw_percent": 7.0,
           "ptnml": "[138, 110, 19, 3, 0]"
         }
-      ]
-
   ],
 
   "ccrl_blitz": [],
