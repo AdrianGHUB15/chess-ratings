@@ -523,9 +523,296 @@
   ],
 
 
-  "ccc_bullet": [],
+  "ccc_bullet": [
+    [
+      [
+        {
+          "rank": 1,
+          "name": "Stockfish 19",
+          "elo": 3847,
+          "error": 14,
+          "points": 405,
+          "played": 540,
+          "score": 75.0,
+          "wins": 292,
+          "draws": 226,
+          "losses": 22,
+          "draw_percent": 13.3,
+          "ptnml": "[0, 0, 36, 198, 36]"
+        },
+        {
+          "rank": 2,
+          "name": "Reckless 0.9.0",
+          "elo": 3790,
+          "error": 19,
+          "points": 359,
+          "played": 540,
+          "score": 66.4,
+          "wins": 259,
+          "draws": 221,
+          "losses": 60,
+          "draw_percent": 25.9,
+          "ptnml": "[1, 18, 70, 143, 38]"
+        },
+        {
+          "rank": 3,
+          "name": "PlentyChess 8",
+          "elo": 3776,
+          "error": 18,
+          "points": 359,
+          "played": 540,
+          "score": 66.6,
+          "wins": 243,
+          "draws": 233,
+          "losses": 64,
+          "draw_percent": 23.3,
+          "ptnml": "[0, 26, 63, 157, 24]"
+        },
+        {
+          "rank": 4,
+          "name": "Pawnocchio 2.0.1",
+          "elo": 3756,
+          "error": 19,
+          "points": 345,
+          "played": 540,
+          "score": 64.0,
+          "wins": 223,
+          "draws": 245,
+          "losses": 72,
+          "draw_percent": 27.4,
+          "ptnml": "[0, 35, 74, 136, 25]"
+        },
+        {
+          "rank": 5,
+          "name": "Integral 8",
+          "elo": 3755,
+          "error": 18,
+          "points": 345,
+          "played": 540,
+          "score": 63.9,
+          "wins": 214,
+          "draws": 262,
+          "losses": 64,
+          "draw_percent": 31.5,
+          "ptnml": "[0, 30, 85, 130, 25]"
+        },
+        {
+          "rank": 6,
+          "name": "Viridithas 20",
+          "elo": 3746,
+          "error": 18,
+          "points": 338,
+          "played": 540,
+          "score": 62.7,
+          "wins": 221,
+          "draws": 235,
+          "losses": 84,
+          "draw_percent": 30.0,
+          "ptnml": "[0, 37, 81, 130, 22]"
+        },
+        {
+          "rank": 7,
+          "name": "Berserk 14",
+          "elo": 3741,
+          "error": 20,
+          "points": 336,
+          "played": 540,
+          "score": 62.4,
+          "wins": 211,
+          "draws": 252,
+          "losses": 77,
+          "draw_percent": 29.3,
+          "ptnml": "[0, 43, 79, 119, 29]"
+        },
+        {
+          "rank": 8,
+          "name": "Stormphrax 8",
+          "elo": 3723,
+          "error": 20,
+          "points": 321,
+          "played": 540,
+          "score": 59.5,
+          "wins": 209,
+          "draws": 225,
+          "losses": 106,
+          "draw_percent": 30.0,
+          "ptnml": "[0, 58, 81, 101, 30]"
+        },
+        {
+          "rank": 9,
+          "name": "Hobbes 3",
+          "elo": 3718,
+          "error": 19,
+          "points": 317,
+          "played": 540,
+          "score": 58.8,
+          "wins": 200,
+          "draws": 235,
+          "losses": 105,
+          "draw_percent": 26.7,
+          "ptnml": "[2, 57, 72, 122, 17]"
+        },
+        {
+          "rank": 10,
+          "name": "Icarus 1.1.1",
+          "elo": 3672,
+          "error": 22,
+          "points": 282,
+          "played": 540,
+          "score": 52.2,
+          "wins": 172,
+          "draws": 220,
+          "losses": 148,
+          "draw_percent": 26.7,
+          "ptnml": "[1, 102, 72, 62, 33]"
+        },
+        {
+          "rank": 11,
+          "name": "Motor 0.9.0",
+          "elo": 3667,
+          "error": 22,
+          "points": 279,
+          "played": 540,
+          "score": 51.6,
+          "wins": 166,
+          "draws": 225,
+          "losses": 149,
+          "draw_percent": 23.3,
+          "ptnml": "[9, 93, 63, 82, 23]"
+        },
+        {
+          "rank": 12,
+          "name": "Prune NNUE 4.0.1",
+          "elo": 3618,
+          "error": 22,
+          "points": 240,
+          "played": 540,
+          "score": 44.5,
+          "wins": 134,
+          "draws": 213,
+          "losses": 193,
+          "draw_percent": 24.1,
+          "ptnml": "[11, 127, 65, 44, 23]"
+        },
+        {
+          "rank": 13,
+          "name": "Heimdall 1.5",
+          "elo": 3617,
+          "error": 20,
+          "points": 239,
+          "played": 540,
+          "score": 44.4,
+          "wins": 123,
+          "draws": 234,
+          "losses": 183,
+          "draw_percent": 25.6,
+          "ptnml": "[8, 126, 69, 52, 15]"
+        },
+        {
+          "rank": 14,
+          "name": "Koivisto 9",
+          "elo": 3592,
+          "error": 21,
+          "points": 220,
+          "played": 540,
+          "score": 40.8,
+          "wins": 104,
+          "draws": 233,
+          "losses": 203,
+          "draw_percent": 18.5,
+          "ptnml": "[5, 160, 50, 39, 16]"
+        },
+        {
+          "rank": 15,
+          "name": "Potential Dev",
+          "elo": 3590,
+          "error": 21,
+          "points": 219,
+          "played": 540,
+          "score": 40.6,
+          "wins": 101,
+          "draws": 236,
+          "losses": 203,
+          "draw_percent": 21.8,
+          "ptnml": "[13, 145, 57, 41, 14]"
+        },
+        {
+          "rank": 16,
+          "name": "Komodo Dragon 1",
+          "elo": 3560,
+          "error": 22,
+          "points": 197,
+          "played": 540,
+          "score": 36.5,
+          "wins": 84,
+          "draws": 226,
+          "losses": 230,
+          "draw_percent": 19.6,
+          "ptnml": "[30, 141, 53, 37, 9]"
+        },
+        {
+          "rank": 17,
+          "name": "Sable 3",
+          "elo": 3438,
+          "error": 22,
+          "points": 119,
+          "played": 540,
+          "score": 22.1,
+          "wins": 27,
+          "draws": 185,
+          "losses": 328,
+          "draw_percent": 9.3,
+          "ptnml": "[79, 155, 26, 10, 1]"
+        },
+        {
+          "rank": 18,
+          "name": "Stash 37",
+          "elo": 3430,
+          "error": 23,
+          "points": 116,
+          "played": 540,
+          "score": 21.4,
+          "wins": 33,
+          "draws": 165,
+          "losses": 342,
+          "draw_percent": 10.0,
+          "ptnml": "[86, 148, 28, 5, 3]"
+        },
+        {
+          "rank": 19,
+          "name": "Crustik Dev",
+          "elo": 3348,
+          "error": 28,
+          "points": 78,
+          "played": 540,
+          "score": 14.5,
+          "wins": 17,
+          "draws": 123,
+          "losses": 400,
+          "draw_percent": 7.0,
+          "ptnml": "[138, 110, 19, 3, 0]"
+        }
+      ]
+    ]
+
+  ],
+
   "ccrl_blitz": [],
   "combined": [
+    {
+      "rank": 1,
+      "name": "Stockfish 19 CCC Bullet",
+      "elo": 3847,
+      "error": 14,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
     {
       "rank": 1,
       "name": "Stockfish 19 LTC",
@@ -541,7 +828,21 @@
       "ptnml": "-"
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "name": "Reckless 0.9.0 CCC Bullet",
+      "elo": 3790,
+      "error": 19,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 4,
       "name": "Reckless 0.9.0 LTC",
       "elo": 3782,
       "error": 16,
@@ -554,9 +855,22 @@
       "draw_percent": "-",
       "ptnml": "-"
     },
-
     {
-      "rank": 3,
+      "rank": 5,
+      "name": "PlentyChess 8 CCC Bullet",
+      "elo": 3776,
+      "error": 18,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 6,
       "name": "PlentyChess 8 LTC",
       "elo": 3761,
       "error": 17,
@@ -570,7 +884,35 @@
       "ptnml": "-"
     },
     {
-      "rank": 4,
+      "rank": 7,
+      "name": "Pawnocchio 2.0.1 CCC Bullet",
+      "elo": 3756,
+      "error": 19,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 8,
+      "name": "Integral 8 CCC Bullet",
+      "elo": 3755,
+      "error": 18,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 9,
       "name": "Pawnocchio 2.0.1 LTC",
       "elo": 3754,
       "error": 16,
@@ -584,7 +926,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "name": "Integral 8 LTC",
       "elo": 3747,
       "error": 16,
@@ -598,7 +940,35 @@
       "ptnml": "-"
     },
     {
-      "rank": 6,
+      "rank": 11,
+      "name": "Viridithas 20 CCC Bullet",
+      "elo": 3746,
+      "error": 18,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 12,
+      "name": "Berserk 14 CCC Bullet",
+      "elo": 3741,
+      "error": 20,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 13,
       "name": "Viridithas 20 LTC",
       "elo": 3732,
       "error": 17,
@@ -612,7 +982,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 7,
+      "rank": 14,
       "name": "Stockfish 19 STC",
       "elo": 3724,
       "error": 8,
@@ -626,7 +996,21 @@
       "ptnml": "-"
     },
     {
-      "rank": 8,
+      "rank": 15,
+      "name": "Stormphrax 8 CCC Bullet",
+      "elo": 3723,
+      "error": 20,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 16,
       "name": "Berserk 14 LTC",
       "elo": 3722,
       "error": 17,
@@ -640,7 +1024,21 @@
       "ptnml": "-"
     },
     {
-      "rank": 9,
+      "rank": 17,
+      "name": "Hobbes 3 CCC Bullet",
+      "elo": 3718,
+      "error": 19,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 18,
       "name": "Hobbes 3 LTC",
       "elo": 3714,
       "error": 18,
@@ -654,7 +1052,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 10,
+      "rank": 19,
       "name": "Stormphrax 8 LTC",
       "elo": 3707,
       "error": 17,
@@ -668,7 +1066,35 @@
       "ptnml": "-"
     },
     {
-      "rank": 11,
+      "rank": 20,
+      "name": "Icarus 1.1.1 CCC Bullet",
+      "elo": 3672,
+      "error": 22,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 21,
+      "name": "Motor 0.9.0 CCC Bullet",
+      "elo": 3667,
+      "error": 22,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 22,
       "name": "Reckless 0.9.0 STC",
       "elo": 3665,
       "error": 9,
@@ -682,7 +1108,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 12,
+      "rank": 23,
       "name": "Icarus 1.1.1 LTC",
       "elo": 3645,
       "error": 19,
@@ -696,7 +1122,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 13,
+      "rank": 24,
       "name": "PlentyChess 8 STC",
       "elo": 3644,
       "error": 10,
@@ -710,7 +1136,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 14,
+      "rank": 25,
       "name": "Motor 0.9.0 LTC",
       "elo": 3643,
       "error": 18,
@@ -724,7 +1150,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 15,
+      "rank": 26,
       "name": "Pawnocchio 2.0.1 STC",
       "elo": 3625,
       "error": 9,
@@ -738,7 +1164,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 16,
+      "rank": 27,
       "name": "Viridithas 20 STC",
       "elo": 3619,
       "error": 10,
@@ -752,7 +1178,35 @@
       "ptnml": "-"
     },
     {
-      "rank": 17,
+      "rank": 28,
+      "name": "Prune NNUE 4.0.1 CCC Bullet",
+      "elo": 3618,
+      "error": 22,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 29,
+      "name": "Heimdall 1.5 CCC Bullet",
+      "elo": 3617,
+      "error": 20,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 30,
       "name": "Integral 8 STC",
       "elo": 3611,
       "error": 10,
@@ -766,7 +1220,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 18,
+      "rank": 31,
       "name": "Berserk 14 STC",
       "elo": 3601,
       "error": 10,
@@ -780,7 +1234,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 19,
+      "rank": 32,
       "name": "Heimdall 1.5 LTC",
       "elo": 3596,
       "error": 18,
@@ -794,7 +1248,35 @@
       "ptnml": "-"
     },
     {
-      "rank": 20,
+      "rank": 33,
+      "name": "Koivisto 9 CCC Bullet",
+      "elo": 3592,
+      "error": 21,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 34,
+      "name": "Potential Dev CCC Bullet",
+      "elo": 3590,
+      "error": 21,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 35,
       "name": "Hobbes 3 STC",
       "elo": 3582,
       "error": 10,
@@ -808,7 +1290,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 21,
+      "rank": 36,
       "name": "Prune NNUE 4.0.1 LTC",
       "elo": 3575,
       "error": 19,
@@ -822,7 +1304,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 22,
+      "rank": 37,
       "name": "Potential Dev LTC",
       "elo": 3574,
       "error": 17,
@@ -836,7 +1318,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 23,
+      "rank": 38,
       "name": "Koivisto 9 LTC",
       "elo": 3570,
       "error": 19,
@@ -850,7 +1332,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 24,
+      "rank": 39,
       "name": "Stormphrax 8 STC",
       "elo": 3568,
       "error": 10,
@@ -864,7 +1346,21 @@
       "ptnml": "-"
     },
     {
-      "rank": 25,
+      "rank": 40,
+      "name": "Komodo Dragon 1 CCC Bullet",
+      "elo": 3560,
+      "error": 22,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 41,
       "name": "Komodo Dragon 1 LTC",
       "elo": 3554,
       "error": 19,
@@ -878,7 +1374,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 26,
+      "rank": 42,
       "name": "Icarus 1.1.1 STC",
       "elo": 3519,
       "error": 10,
@@ -892,7 +1388,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 28,
+      "rank": 43,
       "name": "Motor 0.9.0 STC",
       "elo": 3516,
       "error": 10,
@@ -906,7 +1402,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 29,
+      "rank": 44,
       "name": "Koivisto 9 STC",
       "elo": 3452,
       "error": 10,
@@ -920,7 +1416,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 30,
+      "rank": 45,
       "name": "Prune NNUE 4.0.1 STC",
       "elo": 3443,
       "error": 10,
@@ -934,7 +1430,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 31,
+      "rank": 46,
       "name": "Heimdall 1.5 STC",
       "elo": 3442,
       "error": 11,
@@ -948,7 +1444,21 @@
       "ptnml": "-"
     },
     {
-      "rank": 32,
+      "rank": 47,
+      "name": "Sable 3 CCC Bullet",
+      "elo": 3438,
+      "error": 22,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 48,
       "name": "Sable 3 LTC",
       "elo": 3434,
       "error": 21,
@@ -962,7 +1472,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 33,
+      "rank": 49,
       "name": "Stash 37 CCRL BLITZ",
       "elo": 3430,
       "error": "-",
@@ -976,7 +1486,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 34,
+      "rank": 50,
       "name": "Potential Dev STC",
       "elo": 3403,
       "error": 10,
@@ -990,7 +1500,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 35,
+      "rank": 51,
       "name": "Komodo Dragon 1 STC",
       "elo": 3381,
       "error": 11,
@@ -1004,7 +1514,21 @@
       "ptnml": "-"
     },
     {
-      "rank": 36,
+      "rank": 52,
+      "name": "Crustik Dev CCC Bullet",
+      "elo": 3348,
+      "error": 28,
+      "points": "-",
+      "played": "-",
+      "score": "-",
+      "wins": "-",
+      "draws": "-",
+      "losses": "-",
+      "draw_percent": "-",
+      "ptnml": "-"
+    },
+    {
+      "rank": 53,
       "name": "Crustik Dev LTC",
       "elo": 3319,
       "error": 24,
@@ -1018,7 +1542,7 @@
       "ptnml": "-"
     },
     {
-      "rank": 37,
+      "rank": 54,
       "name": "Sable 3 STC",
       "elo": 3251,
       "error": 13,
